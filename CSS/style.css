@@ -1,0 +1,80 @@
+
+body{
+    
+    background-image: url(/IMG/Allfather.jpg);
+    background-size: 100%;
+    height: 98vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+}
+
+
+#main{
+    margin: auto;
+    background: rgb(0,172,255);
+    background: radial-gradient(circle, rgba(0,172,255,0.8911939775910365) 0%, rgba(92,94,195,1) 100%);
+    border-radius: 10px;
+    width: 450px; 
+    text-align: center;
+}
+
+
+h2{
+    font-size: 2em;
+}
+
+#tollBar{
+    background-color: rgba(240, 248, 255, 0.176);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    justify-content: space-around;
+    font-size: larger;
+    
+}
+input{
+    border-radius: 5px;
+    width: 200px; height: 15px;
+}
+
+button{
+    border: 2px solid slateblue;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+button:hover{
+    background-color: slateblue;
+}
+
+#filter{
+    border-left: 1px solid rgba(255, 255, 255, 0.479);
+    padding-left: 50px;
+}
+
+#cancel-btn{
+    margin-top: 15px;
+}
+
+.done{
+    color: thistle;
+    font-style: italic;
+    background-color: aqua;
+    text-decoration: line-through;
+}
+
+#todolist{
+    padding: 25px;
+}
+
+.todo{
+    background-color: rgba(0, 0, 0, 0.281);
+   box-shadow: 1px 1px 1px;
+    padding: 5px;
+    border-radius: 15px;
+}
+.hide{
+    display: none;
+}

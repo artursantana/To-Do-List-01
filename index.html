@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--JSCRIPT-->
+    <script src="JS/script.js"defer></script>
+</head>
+<body>
+    <div id="main">
+        <header>
+            <h2>To Do List</h2>
+        </header>
+        <hr>
+        <form id="main-form">
+            <p>Add SomeThing</p>
+            <div id="control-form">
+                <input type="text" placeholder="Typing something Here" id="control-input">
+                <button id="button-control"><i class="fa-thin fa-plus"></i></button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Edit your Task</p>
+            <div id="control-form">
+                <input type="text" id="edit-input">
+                <button id="edit-form-btn">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancel-btn">Cancel</button>
+        </form>
+        <div id="tollBar">
+            <div id="search">
+                <h4>Search</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Search">
+                    <button id="eraseButton">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filter:</h4>
+                <select id="filter-select">
+                    <option value="all">all</option>
+                    <option value="done">done</option>
+                    <option value="todo">to do</option>
+                </select>
+            </div>
+        </div>
+        <div id="todolist">
+        </div>
+    </div>
+</body>
+</html>
